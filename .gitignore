@@ -1,0 +1,20 @@
+# Arquivos de compilação gerados
+bin/
+obj/
+
+# Arquivos temporários gerados durante a execução
+obj/
+bin/
+
+# Arquivos específicos do Visual Studio
+.vscode/
+*.suo
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.ide
+*.pdb
+*.cache
+*.log
+**/.vs
