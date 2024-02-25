@@ -1,0 +1,44 @@
+@namespace tarefas_kanban.Shared
+
+<div>
+    <div>
+        <label id="title" name="title">
+            <input type="text"/>
+        </label>
+        <label id="description" name="description">
+            <textarea id="description" name="description" rows="4" cols="50"></textarea>
+        </label>
+    </div>
+    <div>
+        <label id="task-1" name="task-2">
+            <input type="checkbox">
+            teste
+        </label>
+        <button>Salvar</button>
+    </div>
+    <div>
+        <label id="label-tag" name="label-tag">
+            <select id="label-tag" name="label-tag">
+                <option value="semLabel">Sem Label</option>
+                <option value="frontEnd">Front-End</option>
+                <option value="backEnd">Back-End</option>
+                <option value="teste">Teste</option>
+                <option value="configuracao">Configuração</option>
+            </select>
+        </label>
+        <label id="due-date" name="due-date">
+            <select id="due-date" name="due-date">
+                <option value="semPrazo">Sem Prazo</option>
+                <option value="Hoje">Hoje</option>
+                <option value="amanha">Amanhã</option>
+                <option value="umaSemana">Uma Semana</option>
+            </select>
+        </label>
+    </div>
+    <button>Cancelar</button>
+    <button>Salvar</button>
+</div>
+
+@code {
+
+}

@@ -3,10 +3,11 @@
 @using tarefas_kanban.Shared
 
 <PageTitle>Backlog</PageTitle>
-
-<h1>Backlog</h1>
-
-<CreateTaskButton />
+<div class="w-auto h-screen bg-current flex items-start justify-start flex-wrap content-start mb-6">
+    <h1 class="w-full">Backlog</h1>
+    <CreateTaskButton />
+    <TaskOptions />
+</div>
 
 @code {
     
