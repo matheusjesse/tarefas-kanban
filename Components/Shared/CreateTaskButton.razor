@@ -1,9 +1,13 @@
 @namespace tarefas_kanban.Shared
 
-<button onclick="CreateTask" class="border-1	border-slate-200 w-80 h-52 rounded-xl flex items-center justify-center">
+<button @onclick="ToggleTaskCreate" class="border-1	border-slate-200 w-80 h-52 rounded-xl flex items-center justify-center">
     <img src="/plus-icon.svg" alt="ícone na forma de um simbolo de adição">
 </button>
 
 @code {
+
+    [Parameter]
+    public EventCallback ToggleTaskCreate {get; set;}
+    
     
 }

@@ -1,23 +1,20 @@
 ﻿@page "/backlog"
 @rendermode InteractiveServer
-@using tarefas_kanban.Shared
+@namespace tarefas_kanban.Shared
 
 <PageTitle>Backlog</PageTitle>
 <div class="w-auto h-screen bg-current flex items-start justify-start flex-wrap content-start mb-6">
     <h1 class="w-full">Backlog</h1>
-    <button onclick="ToggleCreateTask" class="border-1	border-slate-200 w-80 h-52 rounded-xl flex items-center justify-center">
-        <img src="/plus-icon.svg" alt="ícone na forma de um simbolo de adição">
-    </button>
-    @if (CreatingTask)
-    {
+       <CreateTaskButton ToggleTaskCreate="ToggleTaskCreate" />
+     @if(CreatingTask == true) {
         <TaskOptions /> 
-    }
+     }
+    
 </div>
-
-@code {    
-    public bool CreatingTask { get; set; } = false;
-
-    private void ToggleCreateTask() 
+@code {
+    private bool CreatingTask = false;   
+    
+    private void ToggleTaskCreate() 
     {
         CreatingTask = !CreatingTask;
     }
